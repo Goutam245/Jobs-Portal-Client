@@ -3,6 +3,9 @@ import React, { useContext } from 'react';
 import registerLottiedata from '../../assets/lotiie/register.json'
 import AuthContext from '../../Context/AuthContext/AuthContext';
 import { validatePassword } from 'firebase/auth';
+import SocialLogin from '../Shared/SocialLogin';
+
+
 const Register = () => {
 
     const { createUser } = useContext(AuthContext)
@@ -59,6 +62,12 @@ const Register = () => {
                             <button className="btn btn-primary">Register</button>
                         </div>
                     </form>
+                    <div className="divider">OR</div>
+                   
+                   <div className='text-center'>
+                    <SocialLogin></SocialLogin>
+                   </div>
+                  
                 </div>
             </div>
         </div>

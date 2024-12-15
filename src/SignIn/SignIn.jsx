@@ -3,6 +3,8 @@ import React, { useContext } from 'react';
 import logInlottie from '../../src/assets/lotiie/login.json'
 import AuthContext from '../Context/AuthContext/AuthContext';
 import { Result } from 'postcss';
+import SocialLogin from '../pages/Shared/SocialLogin';
+
 
 const SignIn = () => {
     const {SignInUser} = useContext(AuthContext);
@@ -60,6 +62,11 @@ const SignIn = () => {
                             <button className="btn btn-primary">Login</button>
                         </div>
                     </form>
+                    <div className="divider">OR</div>
+                   
+                   <div className='text-center'>
+                   <SocialLogin></SocialLogin>
+                   </div>
                 </div>
             </div>
         </div>
